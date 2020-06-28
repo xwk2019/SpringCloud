@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.customerRelationship.mapper.ReturnListMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.customerRelationship.entity.ReturnList">
+        <id column="customer_return_list_id" property="customerReturnListId" />
+        <result column="return_number" property="returnNumber" />
+        <result column="return_date" property="returnDate" />
+        <result column="amount_paid" property="amountPaid" />
+        <result column="amount_payable" property="amountPayable" />
+        <result column="state" property="state" />
+        <result column="customer_id" property="customerId" />
+        <result column="user_id" property="userId" />
+        <result column="remarks" property="remarks" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        customer_return_list_id, return_number, return_date, amount_paid, amount_payable, state, customer_id, user_id, remarks
+    </sql>
+
+</mapper>

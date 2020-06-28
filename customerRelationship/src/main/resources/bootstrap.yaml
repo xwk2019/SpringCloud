@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: CR
+  profiles:
+    active: config
+  cloud:
+    config:
+      uri: http://localhost:9003
+      fail-fast: true
